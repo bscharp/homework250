@@ -15,11 +15,15 @@ public class ResultActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         
+        // hide the action bar
         ActionBar actionBar = getActionBar();
         actionBar.hide();
         
+        // get references to screen components
         TextView tv1 = (TextView) findViewById(R.id.textView1);
         TextView tv2 = (TextView) findViewById(R.id.textView2);
+        
+        // retrieve values from other activity and display them
         tv1.setText( getIntent().getStringExtra(USER_EMAIL));
         tv2.setText( getIntent().getStringExtra(USER_PASSWORD));
 	}
