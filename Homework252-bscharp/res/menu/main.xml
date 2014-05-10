@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/action_add"
+          android:icon="@drawable/ic_action_new"
+          android:title="Add task"
+          android:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_delete"
+          android:icon="@drawable/ic_action_discard"
+          android:title="Delete task" 
+          android:showAsAction="ifRoom"/>
+
+
+</menu>
